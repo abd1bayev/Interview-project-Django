@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html>
+{% load static %}
+<html lang="en">
   <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block head %}
+    {% endblock %}
   </head>
   <body>
-    <main>
-      {% block content %}
-      {% endblock %}
-    </main>
+    {% block content %}
+    {% endblock %}
+    {% block header %}
+{% endblock %}
+
+    {% block footer %}
+      <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <ul>
+          <li><a href="https://abdibayevj.pythonanywhere.com/">abdibayevj.com</a></li>
+          <li><a href="+998996953578">+99899-695-35-78</a></li>
+          <li><a href="https://www.linkedin.com/in/jasur-abdibayev-a94109241/">Linkedin</a></li>
+          <li><a href="https://github.com/abd1bayev">GitHub</a></li>
+        </ul>
+      </footer>
+    {% endblock %}
+
+    {% block scripts %}
+      <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
   </body>
 </html>
