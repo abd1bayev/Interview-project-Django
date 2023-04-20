@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome to My Website!</h1>
+  <p>Check out our menus:</p>
+  <ul>
+    <li><a href="{% url 'menu' 'breakfast' %}">Breakfast</a></li>
+    <li><a href="{% url 'menu' 'lunch' %}">Lunch</a></li>
+    <li><a href="{% url 'menu' 'dinner' %}">Dinner</a></li>
+  </ul>
+{% endblock %}
