@@ -3,11 +3,6 @@
 {% block content %}
   {% if menu %}
     <h1>{{ menu.name }} Menu</h1>
-    <ul>
-      {% for item in menu.items.all %}
-        <li>{{ item.name }} - {{ item.price }}</li>
-      {% endfor %}
-    </ul>
   {% else %}
     <p>Sorry, this menu does not exist.</p>
   {% endif %}

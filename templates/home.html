@@ -3,12 +3,15 @@
 
 
 {% block content %}
-  <h1>Welcome to My Website!</h1>
+<div style="height: 80vh">
+    <h1 style="text-align: center">Welcome to My Website!</h1>
   <p>Check out our menus:</p>
   <ul>
     {% for menu in menus %}
       <li><a href="{% url 'menu' menu %}">{{ menu|title }}</a></li>
     {% endfor %}
   </ul>
+</div>
 {% endblock %}
+
 

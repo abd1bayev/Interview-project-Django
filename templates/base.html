@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -10,13 +10,16 @@
     {% endblock %}
   </head>
   <body>
+
+  <div style="min-height: 100vh">
     {% block content %}
     {% endblock %}
     {% block header %}
 {% endblock %}
 
     {% block footer %}
-      <footer>
+      <footer style="height:20vh;text-align: center; display: flex; justify-content: center">
+        <div>
         <p>&copy; 2023 My Website. All rights reserved.</p>
         <ul>
           <li><a href="https://abdibayevj.pythonanywhere.com/">abdibayevj.com</a></li>
@@ -24,11 +27,14 @@
           <li><a href="https://www.linkedin.com/in/jasur-abdibayev-a94109241/">Linkedin</a></li>
           <li><a href="https://github.com/abd1bayev">GitHub</a></li>
         </ul>
+        </div>
       </footer>
     {% endblock %}
 
     {% block scripts %}
       <script src="{% static 'js/script.js' %}"></script>
+
+  </div>
     {% endblock %}
   </body>
 </html>
