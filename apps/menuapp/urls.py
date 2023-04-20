@@ -3,8 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('dwa/', views.home, name='home'),
-    path('', views.geeks_view),
-
+    path('', views.home, name='home'),
     path('menu/<str:menu_name>/', views.menu, name='menu'),
 ]

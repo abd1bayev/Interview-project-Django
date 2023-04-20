@@ -48,7 +48,7 @@ TEMPLATES = [
         # Template backend to be used, For example Jinja
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # Directories for templates
-        'DIRS': [os.path.join(BASE_DIR, 'azerty', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
 
         # options to configure

@@ -4,16 +4,6 @@
     <title>My Website</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'menu' 'breakfast' %}">Breakfast</a></li>
-          <li><a href="{% url 'menu' 'lunch' %}">Lunch</a></li>
-          <li><a href="{% url 'menu' 'dinner' %}">Dinner</a></li>
-        </ul>
-      </nav>
-    </header>
     <main>
       {% block content %}
       {% endblock %}
